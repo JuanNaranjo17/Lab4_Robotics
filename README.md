@@ -220,19 +220,23 @@ Para configurar y ejecutar el proyecto se debe realizar lo siguiente, CON EL ROB
 <h5>Posición HOME [0 0 0 0 0]</h5>
 <img width="450" alt=image src="https://github.com/JuanNaranjo17/Lab4_Robotics/assets/95663629/bd674623-bbdd-49bb-8640-fb6fdbfeae9e">
 <img width="550" alt="image" src="https://github.com/JuanNaranjo17/Lab4_Robotics/assets/95663629/ee37ecaf-d494-475b-b021-2aa06b4a6881">
+<p>Video funcionamiento</p>
+
+
+https://github.com/JuanNaranjo17/Lab4_Robotics/assets/95663629/5352ebf1-a64b-4c2e-a120-8b8aef35b1fe
 
 <h3 id="section6">6. Conclusiones</h3>
 <p>Los parámetros de DH, nos otorga un método rápido, sencillo y repetible para poder caracterizar cualquier tipo de manipulador, adicionalmente, el toolbox de peter corke nos otorga las herramientas necesarias para poder simular los robots, y visualizar diferentes configuraciones de manera rápida y clara.</p>
 <p>Por otra parte, se logró entender las librerías de dynamixel, haciendo uso de los tópicos y servicios re ROS para poder establecer una comunicación con los actuadores del robot. ROS es un software muy útil, dado que controlar simultáneamente más de 2 actuadores requiere una capacidad de procesamiento y memoria elevadas, las cuales no pueden ser satisfechas usando microcontroladores comunes, por lo que ROS nos permite usar de manera sencilla las capacidades de un procesador mucho más rápido y más hilos para hacer control de hardware.</p>
 <p>Finalmente, de las imágenes se observa que el error de los motores es por lo general de menos de un grado. Una precisión impresionante para un manipulador utilizado principalmente para el aprendizaje, este desempeño puede ser aprovechado para realizar tareas de mayor complejidad, abriendo la puerta a proyectos más interesantes </p>
 
-<p>
-  <iframe width="560" height="315" src="https://www.youtube.com/embed/tu_id_del_video" frameborder="0" allowfullscreen></iframe>
-</p>
 
 
 
 
 
-https://github.com/JuanNaranjo17/Lab4_Robotics/assets/95663629/5352ebf1-a64b-4c2e-a120-8b8aef35b1fe
+
+
+
+
 
