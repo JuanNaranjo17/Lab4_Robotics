@@ -91,5 +91,5 @@
 ![image](https://github.com/JuanNaranjo17/Lab4_Robotics/assets/95663629/0fbe5eb4-b61c-404a-8cce-6d60e10bc8c7)
 
 <h3 id="section1">3. Código en python.</h3>
-<p></p>
+<p>Lo primero que debemos hacer, es inicializar los motores en <code>config/basic.yaml</code>.</p>
 
