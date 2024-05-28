@@ -220,7 +220,7 @@ Para configurar y ejecutar el proyecto se debe realizar lo siguiente, CON EL ROB
 <h5>Posición HOME [0 0 0 0 0]</h5>
 <img width="450" alt=image src="https://github.com/JuanNaranjo17/Lab4_Robotics/assets/95663629/bd674623-bbdd-49bb-8640-fb6fdbfeae9e">
 <img width="550" alt="image" src="https://github.com/JuanNaranjo17/Lab4_Robotics/assets/95663629/ee37ecaf-d494-475b-b021-2aa06b4a6881">
-<p>Video funcionamiento</p>
+<p>Video funcionamiento: Para mejor calidad remitirse a la carpeta de "photos".</p>
 
 
 
