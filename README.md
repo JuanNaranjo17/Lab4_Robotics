@@ -119,7 +119,7 @@ def jointCommand(command, id_num, addr_name, value, time):
 
 ```python
 def move_joint(id, position):
-    jointCommand('', id, 'Goal_Position', position, time_execution)</pre>
+    jointCommand('', id, 'Goal_Position', position, time_execution)
 ```
 <p>Esta función lo que busca es simplificar la manera de comunicarnos con el robot, dado que utilizamos frecuentemente el comando <code>Goal_Position</code> para mover la articulación a un determinado grado, y el tiempo de ejecución se deja constante, la función recibe únicamente el ID del motor a mover y la posición a donde se desea colocar.</p>
 
@@ -153,7 +153,7 @@ def deg_to_motor(degrees):
     else: 
         return data_return
 ```
-<p>Los motores dynamixel reciben un número en formato <code>Unit32</code>, por lo que es necesario transformar el número que deseemos en grados a <code>Unit32</code>, la razón por la que se divide entre 300 es por el límite de ángulo al cual podemos llegar, y se le suman 512, dado que este es el valor donde el motor tiene seteado su cero. </p>
+<p>Los motores dynamixel reciben un número en formato de 10 bits, teniendo así una resolucion de 1024, la razón por la que se divide entre 300 es por el límite de ángulo al cual podemos llegar, y se le suman 512, dado que este es el valor donde el motor tiene seteado su cero. </p>
 
 ```python
 def move_to_point():
@@ -223,7 +223,15 @@ Para configurar y ejecutar el proyecto se debe realizar lo siguiente, CON EL ROB
 <p>Video funcionamiento</p>
 
 
-https://github.com/JuanNaranjo17/Lab4_Robotics/assets/95663629/5352ebf1-a64b-4c2e-a120-8b8aef35b1fe
+
+
+
+
+https://github.com/JuanNaranjo17/Lab4_Robotics/assets/95663629/dd68a237-4e7e-451c-b03c-44d6b59330c2
+
+
+
+
 
 <h3 id="section6">6. Conclusiones</h3>
 <p>Los parámetros de DH, nos otorga un método rápido, sencillo y repetible para poder caracterizar cualquier tipo de manipulador, adicionalmente, el toolbox de peter corke nos otorga las herramientas necesarias para poder simular los robots, y visualizar diferentes configuraciones de manera rápida y clara.</p>
