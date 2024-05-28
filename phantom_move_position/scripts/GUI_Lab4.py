@@ -53,8 +53,8 @@ def jointCommand(command, id_num, addr_name, value, time):
 
 # Function that after press the submit button, starts the sequence for move the robot joints to a specific set configuration in the points list
 # The function moves just one servo-motor at a time, starting by the waist and continuing in ascending order till arrive to the wrist
-# The motors don't receive a message in degrees, they receive an unsigned int32, and the treshold limits in degrees are -150º and 150º respectively
-# so it's neccesary do a convertion between degrees and Uint32 with the function deg_to_motor() before send the request to move_joint function
+# The motors don't receive a message in degrees, they receive an unsigned Uint10, and the treshold limits in degrees are -150º and 150º respectively
+# so it's neccesary do a convertion between degrees and Uint10 with the function deg_to_motor() before send the request to move_joint function
 # We block the buttons for avoid send two robot configurations at the same time because the second configuration could interrupt the first
 def move_to_point():
     global next_position_deg
@@ -92,7 +92,7 @@ def listener():
     rospy.init_node('joint_listener', anonymous = True)
     rospy.Subscriber("/dynamixel_workbench/joint_states", JointState, callback)
 
-# Function that converts degrees in Uint32, it's important to know that the zero position is equals to 512
+# Function that converts degrees in Uint10, it's important to know that the zero position is equals to 512
 # We have 1024 possible numbers and 300º, so the slope is 1024/300
 def deg_to_motor(degrees):
     data_return = round((1024/300)*degrees + 512)
